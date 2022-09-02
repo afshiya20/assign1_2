@@ -31,11 +31,11 @@ sudo mysql -u root -p
 Step 4: Create database and a table and Insert rows into the table using :
 
 bash
-CREATE DATABASE students;
-USE students;
+CREATE DATABASE student;
+USE student;
 CREATE TABLE stud (name VARCHAR(20), rollno VARCHAR(10), email VARCHAR(25), branch VARCHAR(25));
 INSERT INTO stud;
-VALUES ('Srinidhi', 'BT20CSE106', 'srinidhisanathana@gmail.com', 'Computer Science and Engineering');
+VALUES ('Srinidhi', 'BT20CSE106', 'srinidhisanathana@gmail.com', 'CSE');
 INSERT INTO stud
 VALUES ('Roohi', 'BT20CSE110', 'roohi@gmail.com', 'CSE');
 INSERT INTO stud
@@ -167,7 +167,7 @@ data from each column of the table
 bash
 System.out.print("Name: " + rs.getString("name"));
 System.out.print(", Roll_no: " + rs.getString("rollno"));
-System.out.print(", Email: " + rs.getString("email"));
+System.out.print(", Section: " + rs.getString("section"));
 System.out.println(", Branch: " + rs.getString("branch"));
 
 *Run the program and you will get the required result*
